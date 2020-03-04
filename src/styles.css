@@ -1,0 +1,67 @@
+/* display elements on page in rows wrappping*/
+.page-wrapper {
+  display: inline-block;
+}
+
+.elevator-bank-wrapper .elevator:first-child {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  text-align: center;
+  border: solid;
+  animation: move1 1s linear infinite;
+}
+
+.elevator-bank-wrapper .elevator:nth-child(2) {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  text-align: center;
+  border: solid;
+  animation: move2 1s linear infinite;
+}
+
+/* .elevator-bank-wrapper .elevator {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  text-align: center;
+  border: solid;
+  animation-name: move2;
+  animation-duration: 1s;
+} */
+
+/*TODO change these*/
+@keyframes move1 {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+  }
+}
+
+@keyframes move2 {
+  0%, 100% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 0px;
+  }
+}
+
+.building-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.building-wrapper .floor-button {
+  margin-top: 50px;
+  margin-left: 20px;
+}
